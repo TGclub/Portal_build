@@ -1,0 +1,25 @@
+extends home
+
+//- 项目展览页面模板
+block content
+	section.categories-banner
+		.categories-banner-text
+			.iconBox
+				i.fa.fa-gamepad
+			.musk
+				p.text-center.categoriesTitle 项目展览馆
+				p.text-center.categoriesSubTitle Project Repository
+	.container
+		.row
+			- for(let i=0;i<3;i++)
+				.col-lg-4
+					include components/categroyItem
+		.row
+			- for(let i=3;i<6;i++)
+				.col-lg-4
+					include components/categroyItem
+	br
+	br
+	br
+	br
+	br

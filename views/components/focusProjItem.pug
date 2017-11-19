@@ -1,0 +1,15 @@
+// 焦点项目模板
+- var props = focusProjects[i]
+- var picURL = "background-image:url("+props.picUrl+");"
+
+a(href=`project/${props.id}`)
+	.focusProjItem
+		.focusProjItem-pic(style=picURL)
+		.focusProjItem-main
+			p.focusProjItem-main-title #{props.projectName}
+			p.focusProjItem-main-intro #{props.introduction}
+		.focusProjItem-author
+			span #{props.leaderName}
+			span #{props.startDate.month}/#{props.startDate.date}/#{props.startDate.year}
+
+
