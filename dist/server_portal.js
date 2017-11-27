@@ -28,6 +28,7 @@ app.use(expressValidator());
 const projectController = require("./controllers/project");
 const memberController = require("./controllers/member");
 const manageController = require("./controllers/managment");
+console.log('serving');
 /**
  * express get to render configuration
  */
